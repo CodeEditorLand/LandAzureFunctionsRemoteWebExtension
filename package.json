@@ -1,7 +1,29 @@
 {
 	"name": "@codeeditorland/functions-remote-web",
 	"displayName": "vscode-azure-functions-remote-web",
+	"version": "0.0.1",
+	"private": false,
 	"description": "",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureFunctionsRemoteWebExtension#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureFunctionsRemoteWebExtension/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandAzureFunctionsRemoteWebExtension.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "webOpener.ts",
 	"browser": "./dist/web/extension.js",
 	"scripts": {
@@ -9,6 +31,7 @@
 		"compile-web": "webpack",
 		"host": "npx serve --cors -l 5000",
 		"package-web": "webpack --mode production --devtool hidden-source-map",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
 		"watch-web": "webpack --watch"
 	},
@@ -52,6 +75,7 @@
 		"uuid": "8.3.2"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/async-retry": "1.4.5",
 		"@types/js-md5": "0.7.0",
 		"@types/node": "18.7.7",
@@ -59,5 +83,8 @@
 		"assert": "2.0.0",
 		"process": "0.11.10",
 		"ts-loader": "9.3.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
