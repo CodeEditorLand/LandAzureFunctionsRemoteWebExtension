@@ -56,7 +56,7 @@
 		"@vs/tunnels-contracts": "1.0.7280",
 		"@vs/tunnels-management": "1.0.7280",
 		"adm-zip": "0.5.9",
-		"axios": "0.27.2",
+		"axios": "0.30.0",
 		"buffer": "6.0.3",
 		"constants-browserify": "1.0.0",
 		"exponential-backoff": "3.1.1",
